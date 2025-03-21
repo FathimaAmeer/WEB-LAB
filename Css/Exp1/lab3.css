@@ -1,0 +1,13 @@
+
+h2 {
+    color: #111014;
+    font-size: 28px;
+    text-align: center;
+}
+.product p {
+    font-size: 16px;
+    color: #666;
+}
+.product strong {
+    color: #d35400;
+}
