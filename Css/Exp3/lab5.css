@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4e1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.comment-container {
+    background: #89c00b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+form {
+    background: #670608;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 8px rgba(241, 5, 5, 0.1);
+}
+
+h2 {
+    color: #141412;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ec9e9e;
+}
+
+.container, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f32e2e;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: #fffaf0;
+}
+
+
+
+input:focus, textarea:focus {
+    border-color: #2031a1;
+    box-shadow: 0px 0px 8px rgba(224, 229, 202, 0.3);
+    outline: none;
+    background: #fff5e1;
+}
+
+button {
+    background: #d35400;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+#success-message {
+    display: none;
+    background-color:aqua;
+}
