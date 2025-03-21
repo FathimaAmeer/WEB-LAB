@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image and Text on Hover</title>
+
+    <style>
+        /* Center align text and apply font style */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        /* Styling for the hoverable content box */
+        #content {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #333;
+            cursor: pointer; /* Changes cursor to pointer to indicate interactivity */
+        }
+
+        /* Styling for the image */
+        img {
+            width: 200px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading for user instruction -->
+    <h2>Hover over the box to change the text and image</h2>
+
+    <!-- Div container with hover event listeners -->
+    <div id="content" onmouseover="changeContent()" onmouseout="resetContent()">
+        <!-- Default text -->
+        <p id="text">Hover over me!</p>
+        
+        <!-- Default image -->
+        <img id="image" src="https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/17153031/emoji_blush.jpg" alt="Default Image">
+    </div>
+
+    <script>
+        /* Function to change text and image when hovered */
+        function changeContent() {
+            document.getElementById("text").innerText = "You are TRAPPED!!!"; // Change text
+            document.getElementById("image").src = "https://symbl-world.akamaized.net/i/webp/7b/e5a7e335877aa746318f96bcc50455.webp"; // Change image
+        }
+
+        /* Function to reset text and image when hover is removed */
+        function resetContent() {
+            document.getElementById("text").innerText = "Hover over me!"; // Reset text
+            document.getElementById("image").src = "https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/17153031/emoji_blush.jpg"; // Reset image
+        }
+    </script>
+
+</body>
+</html>
